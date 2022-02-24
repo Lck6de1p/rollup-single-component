@@ -26,5 +26,6 @@ export default {
 <style lang="less" scoped>
 .title {
   color: blue;
+  height: 50px;
 }
 </style>

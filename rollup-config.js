@@ -6,7 +6,7 @@ import autoprefixer from 'autoprefixer';
 
 import resolve from "rollup-plugin-node-resolve"
 import commonjs from "@rollup/plugin-commonjs"
-
+// import babel from 'rollup-plugin-babel'
 var src = process.argv.splice(' ')[4].split('--')[1];
 
 export default {
@@ -22,8 +22,8 @@ export default {
   ],
   external: ['vue'],
   plugins:[
-    commonjs(),
     resolve(),
+    commonjs(),
     vue(),
     postcss({
       plugins: [  
